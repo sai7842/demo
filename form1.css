@@ -1,0 +1,18 @@
+input,textarea{
+    float: right;
+    
+}
+input[type = submit]{
+width:100px;
+margin-left: 4.5em;
+background-color:#35c8ef;
+border-radius:5px;
+border:2px solid blue;
+color:#fff
+}
+.add {
+    background-color: #4CAF50;
+}
+.remove {
+    background-color: #f44336;
+}

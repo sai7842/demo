@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Form to PDF</title>
+        
+        <link rel="stylesheet" href="adder1.js">
+        <script src="adder.js"></script>
+        <style type="text/css">
+           form label{
+
+           display: inline-block;
+
+           width: 300px;
+
+           font-weight: bold;
+
+            }
+            h2{
+                color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="download.cfm" method="POST" class="ml-5" enctype="multipart/form-data" >
+            <div id="myForm">
+                <h2 class="mt-4" style="background-color:skyblue">Enter your details</h2><br>
+                <label for="nameText">Enter your name</label>
+                <input type="text" id="nameText" name="nameText" placeholder="Name" class="input-group col-6">
+                <br>
+                <label for="picInput">Upload your picture</label>
+                <input type="file" id="picInput" name="picInput" class="input-group col-6">
+                <br>
+                <label for="jobText">Enter your job title</label>
+                <input type="text" id="jobText" name="jobText" placeholder="Job Title" class="input-group col-6">
+                <br>
+                <label for="emailText">Enter your email</label>
+                <input type="email" name="emailText" id="emailText" placeholder="Email" class="input-group col-6">
+                <br>
+                <label for="websiteText">Enter your Website</label>
+                <input type="text" name="websiteText" id="websiteText" placeholder="Website" class="input-group col-6">
+                <br>
+                <label for="phoneText">Enter your mobile number</label>
+                <input type="number" name="phoneText" id="phoneText" placeholder="Mobile number" class="input-group col-6">
+                <br>
+                <label for="personalSection">Enter your personal profile</label><br>
+                <textarea name="personalSection" id="personalSection" cols="100" rows="4" placeholder="Personal Information"
+                    class="input-group col-6"></textarea>
+                <br>
+                <section id="workSection">
+                    <label for="workSection">Enter your work experience</label><br>
+                    <input type="text" placeholder="Job Title" name="JobTitle" id="JobTitle" class="input-group col-6"><br>
+                    <textarea rows="4" cols="100" placeholder="Work Experience" name="Work" id="Work" class="input-group col-6"></textarea>
+                    <br>
+                </section>
+                <span class="add"><input type="button" class="btn btn-dark" value="Add Work" style="background-color:green" onclick="textareaFunction()"></span>
+                <span class="remove"><input type="button" class="btn btn-dark ml-5" value="Remove" style="background-color:red" onclick="removeElement()"></span>
+                <br><br>
+                <section id="skillSection">
+                    <label>Key skills</label>
+                    <br>
+                    <input type="text" placeholder="Skill" id="Skills" name="Skills" class="input-group col-6">
+                    <br>
+                </section>
+                <span class="add"><input type="button" class="btn btn-dark" value="Add Skill" style="background-color:green" onclick="skillFunction()"></span>
+                <span class="remove"><input type="button" class="btn btn-dark ml-5" style="background-color:red" value="Remove" onclick="removeSkill()"></span>
+                <br><br>
+                <section id="collegeSection">
+                    <label for="collegeSection">Education Details</label><br>
+                    <input type="text" placeholder="College/University" name="College" id="College" class="input-group col-6"><br>
+                    <input type="text" placeholder="Qualification" name="Qualification" id="Qualification" class="input-group col-6">
+                    <br>
+                </section>
+                <span class="add"><input type="button" class="btn btn-dark" value="Add Education" style="background-color:green" onclick="educationFunction()"></span>
+                <span class="remove"><input type="button" class="btn btn-dark ml-5" style="background-color:red" value="Remove" onclick="removeEducation()"></span>
+            </div><br>
+            
+            <input type="submit" value="Submit" name="submit" class="btn btn-primary" style="background-color:blue">
+        </form>
+    </body>
+</html>
