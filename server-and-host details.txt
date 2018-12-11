@@ -1,0 +1,8 @@
+<cfoutput>#isLocalHost(CGI.REMOTE_ADDR)#</cfoutput><br/>
+<cfoutput>#getLocalHostIP()#</cfoutput><br>
+<cfoutput>
+HTTP_HOST -- #CGI.HTTP_HOST#<br/>
+SERVER_NAME -- #CGI.SERVER_NAME#<br/>
+SERVER_PORT -- #CGI.SERVER_PORT#<br/>
+</cfoutput>
+<cfoutput>#CGI.CF_TEMPLATE_PATH#</cfoutput>
