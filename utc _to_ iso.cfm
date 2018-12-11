@@ -11,3 +11,5 @@ string function getIsoTimeString(required date datetime, boolean convertToUTC=tr
     writeOutput( "<br />" );
     writeOutput( "ISO Time: " & getIsoTimeString( currentTime ) );
 </cfscript>
+<cfscript>
+</cfscript>
